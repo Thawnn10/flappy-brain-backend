@@ -16,8 +16,9 @@ app.use(cors({
         'http://127.0.0.1:5500',
         'http://localhost:8000',            // Python server
         'http://127.0.0.1:8000',
-        'https://YOUR_USERNAME.github.io',  // GitHub Pages
-        'https://flappy-brain-backend.onrender.com'
+        'https://thawnn10.github.io/FlappyBrainAI/',  // GitHub Pages
+        'https://flappy-brain-backend.onrender.com',
+        'https://thawnn10.github.io'
     ],
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true
