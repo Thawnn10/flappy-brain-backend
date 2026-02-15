@@ -11,7 +11,14 @@ const PORT = process.env.PORT || 3000;
 // ========== MIDDLEWARE ==========
 app.use(helmet());
 app.use(cors({
-    origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'http://localhost:8080', 'http://127.0.0.1:8080', 'http://localhost:3000'],
+    origin: [
+        'http://localhost:5500',           // Live Server
+        'http://127.0.0.1:5500',
+        'http://localhost:8000',            // Python server
+        'http://127.0.0.1:8000',
+        'https://YOUR_USERNAME.github.io',  // GitHub Pages
+        'https://flappy-brain-backend.onrender.com'
+    ],
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true
 }));
