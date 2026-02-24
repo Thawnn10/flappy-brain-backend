@@ -167,12 +167,13 @@ app.post('/api/explain-answer', async (req, res) => {
 });
 
 // ========== HELPER FUNCTIONS ==========
-
 function createPrompt(grade, subject, num) {
     let subjectText = '';
+    let specificRequirements = '';
     
     if (subject === 'all') {
         subjectText = 'random subjects: Mathematics, Physics, Chemistry, Biology, Literature, English, History, Geography';
+        specificRequirements = '- For each subject, ensure questions are age-appropriate for grade ' + grade;
     } else {
         const subjectMap = {
             'Toán': 'Mathematics',
@@ -185,32 +186,98 @@ function createPrompt(grade, subject, num) {
             'Địa': 'Geography'
         };
         subjectText = `${subjectMap[subject] || subject} subject`;
+        
+        // Thêm yêu cầu cụ thể theo môn học
+        specificRequirements = getSubjectSpecificRequirements(subject, grade);
     }
 
-    return `You are a Vietnamese teacher. Create ${num} multiple choice questions for grade ${grade} in Vietnam, ${subjectText}.
+    return `You are an expert Vietnamese teacher with 20 years of experience. Create ${num} multiple choice questions for grade ${grade} students in Vietnam, focusing on ${subjectText}.
 
-IMPORTANT REQUIREMENTS:
-1. Return ONLY JSON, no other text
-2. JSON format:
+CRITICAL REQUIREMENTS - MUST FOLLOW EXACTLY:
+1. Return ONLY valid JSON, no explanations, no markdown, no additional text
+2. JSON format STRICTLY:
 {
   "questions": [
     {
-      "subject": "Subject Name",
-      "text": "Clear question text",
+      "subject": "Subject Name (exactly as provided)",
+      "text": "Clear question text with proper grammar",
       "options": ["A. Option A", "B. Option B", "C. Option C", "D. Option D"],
       "answer": "A"
     }
   ]
 }
 
-RULES:
-- Questions must follow Vietnamese curriculum for grade ${grade}
-- Correct answers should be evenly distributed among A,B,C,D
-- Each question must have 4 options
-- Answer must be "A", "B", "C", or "D"
-- Questions should be clear and unambiguous`;
+EDUCATIONAL STANDARDS:
+- Questions must align with Vietnamese Ministry of Education curriculum for grade ${grade}
+- Difficulty level: mix of easy (30%), medium (50%), and challenging (20%)
+- Questions must be factually accurate and unambiguous
+- Each question should test ONE specific concept or skill
+- Avoid culturally insensitive content
+- Use age-appropriate language for grade ${grade} students
+
+${specificRequirements}
+
+QUESTION FORMAT RULES:
+- Each question MUST have exactly 4 options (A, B, C, D)
+- Options must be plausible but only one correct
+- Avoid "all of the above" or "none of the above" unless absolutely necessary
+- Distractors (wrong answers) should be common misconceptions
+- Answer must be exactly "A", "B", "C", or "D"
+
+DISTRIBUTION REQUIREMENTS:
+- Correct answers must be evenly distributed: ${Math.floor(num/4)} questions per letter (A, B, C, D)
+- If ${num} is not divisible by 4, distribute remainder randomly but ensure balance
+
+VERIFICATION STEPS (check before returning):
+- Verify each question has exactly 4 options
+- Verify each option starts with "A.", "B.", "C.", or "D."
+- Verify answer matches one of the options
+- Verify no duplicate or similar questions
+- Verify all content is appropriate for grade ${grade}
+- Double-check factual accuracy
+
+QUALITY CHECK:
+- Questions should be engaging and clear
+- Avoid trick questions
+- Ensure consistent difficulty across all questions
+
+Remember: Return ONLY the JSON object, no other text.`;
 }
 
+function getSubjectSpecificRequirements(subject, grade) {
+    const requirements = {
+        'Toán': `- Focus on grade ${grade} math concepts (arithmetic, geometry, algebra, measurement)
+- Include both computational and word problems
+- Ensure numbers and operations are appropriate for grade ${grade}
+- Use real-life examples where applicable`,
+        
+        'Lý': `- Focus on fundamental physics concepts for grade ${grade}
+- Include everyday examples and observations
+- Ensure no advanced formulas beyond grade ${grade} level`,
+        
+        'Hóa': `- Focus on basic chemistry concepts for grade ${grade}
+- Include safety awareness where relevant
+- Emphasize real-world applications`,
+        
+        'Văn': `- Use age-appropriate literary excerpts
+- Focus on reading comprehension, vocabulary, and basic literary analysis
+- Questions should test understanding, not memorization`,
+        
+        'Anh': `- Use grade ${grade} appropriate vocabulary and grammar
+- Include reading comprehension, grammar, and vocabulary questions
+- Ensure all English text is grammatically correct`,
+        
+        'Sử': `- Focus on historical facts appropriate for grade ${grade}
+- Include both Vietnamese and world history as per curriculum
+- Ensure dates and events are accurate`,
+        
+        'Địa': `- Focus on geographical concepts for grade ${grade}
+- Include map reading skills where applicable
+- Cover both physical and human geography`
+    };
+    
+    return requirements[subject] || '- Follow standard curriculum guidelines for this subject';
+}
 function createExplanationPrompt(question, correctAnswer, userAnswer = null) {
     const isCorrect = userAnswer === correctAnswer;
     
