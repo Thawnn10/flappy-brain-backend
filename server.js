@@ -240,10 +240,188 @@ function getSubjectSpecificRequirements(subject, grade) {
     const requirements = {
         'Toán': `YÊU CẦU RIÊNG CHO MÔN TOÁN:
 - Tập trung vào kiến thức toán lớp ${grade} (số học, hình học, đại số, đo lường)
-- Các bài tập thật đa dạng không quá dễ cũng không khó đến mức bất khả thi
-- Số liệu và phép tính phù hợp với trình độ lớp ${grade}
-- Ưu tiên các ví dụ thực tế, gần gũi với học sinh
+- Các bài tập thật đa dạng không quá dễ cũng không khó đến mức bất khả thi đảm bảo tuyệt đối giống các dạng bài trong sách giáo khoa lớp ${grade}
+- Số liệu và phép tính phù hợp tuyệt đối với trình độ lớp ${grade}
+- Ưu tiên các ví dụ thực tế, gần gũi với học sinh bỏ những câu tính toán cộng trừ các số đối với các lớp 7 đến 12
 - Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
+A. CẤU TRÚC MẠCH KIẾN THỨC (theo chương trình mới):
+
+1. SỐ VÀ ĐẠI SỐ (40% câu hỏi)
+2. HÌNH HỌC VÀ ĐO LƯỜNG (30% câu hỏi)
+3. THỐNG KÊ VÀ XÁC SUẤT (20% câu hỏi) 
+4. HOẠT ĐỘNG THỰC HÀNH VÀ TRẢI NGHIỆM (10% câu hỏi) - các bài toán gắn với thực tiễn 
+
+B. YÊU CẦU CẦN ĐẠT THEO TỪNG MẠCH KIẾN THỨC:
+
+1. SỐ VÀ ĐẠI SỐ:
+LỚP 1-5:
+- Đọc, viết, so sánh, tính toán các số tự nhiên trong phạm vi phù hợp lớp học
+- Nhận biết phân số, số thập phân (lớp 4-5)
+- Tính giá trị biểu thức số có đến 2-3 phép tính
+- Tìm thành phần chưa biết (x)
+
+LỚP 6-7:
+- Số nguyên, phân số, số thập phân, hỗn số
+- Tỉ lệ thức, dãy tỉ số bằng nhau
+- Biểu thức đại số, đơn thức, đa thức
+- Phương trình bậc nhất một ẩn
+
+LỚP 8-9:
+- Căn bậc hai, căn bậc ba
+- Hàm số bậc nhất, bậc hai và đồ thị
+- Phương trình bậc hai, hệ phương trình bậc nhất hai ẩn
+- Bất phương trình bậc nhất một ẩn
+
+LỚP 10-12:
+- Hàm số lũy thừa, mũ, logarit
+- Đạo hàm, nguyên hàm, tích phân
+- Số phức
+- Phương pháp tọa độ trong mặt phẳng và không gian
+
+2. HÌNH HỌC VÀ ĐO LƯỜNG:
+
+LỚP 1-5:
+- Nhận dạng hình phẳng, hình khối
+- Tính chu vi, diện tích các hình đơn giản
+- Đo độ dài, khối lượng, dung tích, thời gian
+- Xác định vị trí, định hướng không gian
+
+LỚP 6-7:
+- Điểm, đường thẳng, tia, góc
+- Quan hệ song song, vuông góc
+- Tam giác, tứ giác (tính chất, diện tích)
+- Hình hộp chữ nhật, hình lăng trụ đứng
+
+LỚP 8-9:
+- Định lý Pythagore
+- Đường tròn (góc với đường tròn, tiếp tuyến)
+- Hình đồng dạng
+- Hình nón, hình trụ, hình cầu
+
+LỚP 10-12:
+- Vectơ trong mặt phẳng và không gian
+- Phương pháp tọa độ trong mặt phẳng, không gian
+- Quan hệ vuông góc trong không gian
+- Khối đa diện, thể tích khối đa diện
+
+3. THỐNG KÊ VÀ XÁC SUẤT: 
+
+LỚP 1-5:
+- Thu thập, phân loại dữ liệu đơn giản
+- Đọc biểu đồ tranh, biểu đồ cột
+- Nhận biết khả năng xảy ra (chắc chắn, có thể, không thể)
+
+LỚP 6-7:
+- Thu thập, phân tích dữ liệu
+- Biểu đồ cột kép, biểu đồ đoạn thẳng
+- Xác suất của biến cố đơn giản
+
+LỚP 8-9:
+- Bảng tần số, biểu đồ tần số
+- Xác suất của biến cố trong các thí nghiệm đơn giản
+- Giá trị trung bình, mốt, trung vị
+
+LỚP 10-12:
+- Quy tắc đếm, hoán vị, chỉnh hợp, tổ hợp
+- Xác suất có điều kiện, xác suất toàn phần
+- Biến ngẫu nhiên rời rạc, kỳ vọng, phương sai
+
+4. HOẠT ĐỘNG THỰC HÀNH VÀ TRẢI NGHIỆM: 
+
+LỚP 1-5:
+- Bài toán mua bán, tính tiền
+- Bài toán đo đạc thực tế
+- Bài toán thời gian (giờ, ngày, tháng)
+- Ứng dụng toán trong cuộc sống hàng ngày
+
+LỚP 6-9:
+- Bài toán thực tế về tỉ lệ, phần trăm (giảm giá, lãi suất)
+- Bài toán đo đạc trong thực tế (chiều cao cây, tòa nhà)
+- Bài toán về chuyển động, công việc
+- Dự án nhỏ: thống kê, dự đoán
+
+LỚP 10-12:
+- Bài toán tối ưu (sản xuất, kinh doanh)
+- Mô hình hóa toán học các tình huống thực tế
+- Ứng dụng đạo hàm trong tối ưu hóa
+- Bài toán lãi suất ngân hàng, đầu tư
+
+C. VÍ DỤ MINH HỌA CỤ THỂ CHO LỚP ${grade}:
+
+LỚP 1:
+• Số 15 gồm mấy chục và mấy đơn vị?
+• Hình nào là hình vuông?
+• Đồng hồ chỉ mấy giờ?
+
+LỚP 2:
+• 23 + 15 = ?
+• Điền dấu >, <, =: 45 ... 54
+• Mẹ mua 12 quả cam, biếu bà 5 quả. Hỏi còn lại mấy quả?
+
+LỚP 3:
+• Tính: 125 + 234 = ?
+• Hình chữ nhật có chiều dài 8cm, chiều rộng 5cm. Tính chu vi?
+• Biểu đồ cột cho biết số học sinh thích các môn học
+
+LỚP 4:
+• 3/4 của 24 là bao nhiêu?
+• 2,5 + 3,7 = ?
+• Một cửa hàng bán 150kg gạo, đã bán được 2/5 số gạo. Hỏi còn lại bao kg?
+
+LỚP 5:
+• 25% của 200 là bao nhiêu?
+• Tính diện tích hình thang có đáy lớn 8cm, đáy bé 5cm, cao 4cm
+• Khả năng nào có thể xảy ra khi tung đồng xu?
+
+LỚP 6:
+• (-15) + 20 = ?
+• Tìm x biết: 2x - 5 = 11
+• Một lớp có 24 học sinh nam, 16 học sinh nữ. Tính tỉ số phần trăm học sinh nữ?
+
+LỚP 7:
+• Thu gọn đơn thức: 3x²y . (-2xy³)
+• Cho tam giác ABC có góc A = 50°, góc B = 70°. Tính góc C?
+• Biểu đồ đoạn thẳng biểu diễn nhiệt độ các ngày trong tuần
+
+LỚP 8:
+• Giải phương trình: x² - 5x + 6 = 0
+• Tính cạnh huyền của tam giác vuông có hai cạnh góc vuông 6cm và 8cm
+• Một xe máy đi từ A lúc 7h với vận tốc 40km/h, đến B lúc 9h. Tính quãng đường AB?
+
+LỚP 9:
+• Giải hệ phương trình: {x + y = 5; 2x - y = 1}
+• Cho đường tròn (O) bán kính 5cm, dây AB = 6cm. Tính khoảng cách từ O đến AB
+• Một hộp có 5 bi đỏ, 3 bi xanh. Lấy ngẫu nhiên 1 bi. Tính xác suất lấy được bi đỏ?
+
+LỚP 10:
+• Tìm tập xác định của hàm số y = √(x-3)
+• Trong mặt phẳng Oxy, cho A(1,2), B(4,6). Tính độ dài AB
+• Tung một con xúc xắc 2 lần. Tính xác suất tổng số chấm bằng 7
+
+LỚP 11:
+• Tính đạo hàm của f(x) = x³ - 3x² + 2x
+• Có bao nhiêu cách xếp 5 bạn vào 5 ghế?
+• Cho hình chóp S.ABCD có đáy là hình vuông. Chứng minh SA vuông góc với BD
+
+LỚP 12:
+• Tính nguyên hàm ∫(2x + 3)dx
+• Tìm m để hàm số y = x³ - 3mx² + 3x đồng biến trên R
+• Một người gửi 100 triệu với lãi suất 7%/năm. Tính số tiền sau 3 năm
+
+D. ĐIỂM MỚI CỦA CHƯƠNG TRÌNH GDPT 2018 CẦN LƯU Ý:
+
+1. Tăng cường tính ứng dụng thực tiễn: Ưu tiên các bài toán gắn với tình huống thực tế
+2. Phát triển năng lực toán học: không chỉ kiểm tra kiến thức thuần túy
+3. Tích hợp STEM: có thể kết hợp kiến thức với Khoa học, Công nghệ, Kỹ thuật
+4. Tăng cường Thống kê và Xác suất: đây là mạch kiến thức mới được chú trọng
+5. Hoạt động trải nghiệm: các bài toán mô phỏng tình huống thực tế
+
+E. YÊU CẦU CHẤT LƯỢNG:
+
+- Câu hỏi phải bám sát "Yêu cầu cần đạt" của chương trình GDPT 2018 cho lớp ${grade}
+- Đảm bảo tính chính xác về mặt kiến thức
+- Các lựa chọn sai là những lỗi học sinh thường mắc
+- Mỗi câu hỏi chỉ kiểm tra 1 yêu cầu cần đạt cụ thể
 - Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Có thể bao gồm: tính nhanh, tìm x, hình học cơ bản, phân số, số thập phân (tùy theo lớp)`,
         
