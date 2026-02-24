@@ -179,7 +179,7 @@ function createPrompt(grade, subject, num) {
         specificRequirements = getSubjectSpecificRequirements(subject, grade);
     }
 
-    return `Bạn là giáo viên Việt Nam có 20 năm kinh nghiệm. Hãy tạo ${num} câu hỏi trắc nghiệm cho học sinh lớp ${grade} tại Việt Nam, môn ${subjectText}.
+    return `Bạn là giáo viên dạy giỏi tại Việt Nam có hơn 20 năm kinh nghiệm. Hãy tạo ${num} câu hỏi trắc nghiệm cho học sinh lớp ${grade} tại Việt Nam, môn ${subjectText}.
 
 YÊU CẦU QUAN TRỌNG - PHẢI TUÂN THỦ CHÍNH XÁC:
 1. Chỉ trả về JSON hợp lệ, KHÔNG thêm giải thích, KHÔNG markdown, KHÔNG text nào khác
@@ -197,7 +197,7 @@ YÊU CẦU QUAN TRỌNG - PHẢI TUÂN THỦ CHÍNH XÁC:
 
 CHUẨN KIẾN THỨC:
 - Câu hỏi phải bám sát chương trình của Bộ Giáo dục cho lớp ${grade}
-- Phân bố độ khó: dễ (30%), trung bình (50%), khó (20%)
+- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
 - Câu hỏi phải chính xác về mặt kiến thức, không mơ hồ
 - Mỗi câu hỏi chỉ kiểm tra MỘT khái niệm/kỹ năng cụ thể
 - Nội dung phù hợp với lứa tuổi học sinh lớp ${grade}
@@ -240,7 +240,7 @@ function getSubjectSpecificRequirements(subject, grade) {
     const requirements = {
         'Toán': `YÊU CẦU RIÊNG CHO MÔN TOÁN:
 - Tập trung vào kiến thức toán lớp ${grade} (số học, hình học, đại số, đo lường)
-- Bao gồm cả bài toán tính toán và bài toán có lời văn
+- Các bài tập thật đa dạng không quá dễ cũng không khó đến mức bất khả thi
 - Số liệu và phép tính phù hợp với trình độ lớp ${grade}
 - Ưu tiên các ví dụ thực tế, gần gũi với học sinh
 - Có thể bao gồm: tính nhanh, tìm x, hình học cơ bản, phân số, số thập phân (tùy theo lớp)`,
@@ -289,9 +289,9 @@ function getSubjectSpecificRequirements(subject, grade) {
     };
     
     return requirements[subject] || `YÊU CẦU RIÊNG CHO MÔN ${subject}:
-- Tuân thủ chương trình chuẩn của Bộ Giáo dục cho lớp ${grade}
+- Tuân thủ tuyệt đối chương trình chuẩn của Bộ Giáo dục cho lớp ${grade}
 - Nội dung phù hợp với lứa tuổi
-- Đảm bảo tính chính xác và giáo dục`;
+- Đảm bảo tính tuyệt đối chính xác và giáo dục không thể xảy ra việc tạo câu hỏi sai`;
 }
 function createExplanationPrompt(question, correctAnswer, userAnswer = null) {
     const isCorrect = userAnswer === correctAnswer;
