@@ -172,111 +172,126 @@ function createPrompt(grade, subject, num) {
     let specificRequirements = '';
     
     if (subject === 'all') {
-        subjectText = 'random subjects: Mathematics, Physics, Chemistry, Biology, Literature, English, History, Geography';
-        specificRequirements = '- For each subject, ensure questions are age-appropriate for grade ' + grade;
+        subjectText = 'các môn: Toán, Vật Lý, Hóa Học, Sinh Học, Ngữ Văn, Tiếng Anh, Lịch Sử, Địa Lý';
+        specificRequirements = '- Với mỗi môn, đảm bảo câu hỏi phù hợp với lứa tuổi học sinh lớp ' + grade;
     } else {
-        const subjectMap = {
-            'Toán': 'Mathematics',
-            'Lý': 'Physics', 
-            'Hóa': 'Chemistry',
-            'Sinh': 'Biology',
-            'Văn': 'Literature',
-            'Anh': 'English',
-            'Sử': 'History',
-            'Địa': 'Geography'
-        };
-        subjectText = `${subjectMap[subject] || subject} subject`;
-        
-        // Thêm yêu cầu cụ thể theo môn học
+        subjectText = `môn ${subject}`;
         specificRequirements = getSubjectSpecificRequirements(subject, grade);
     }
 
-    return `You are an expert Vietnamese teacher with 20 years of experience. Create ${num} multiple choice questions for grade ${grade} students in Vietnam, focusing on ${subjectText}.
+    return `Bạn là giáo viên Việt Nam có 20 năm kinh nghiệm. Hãy tạo ${num} câu hỏi trắc nghiệm cho học sinh lớp ${grade} tại Việt Nam, môn ${subjectText}.
 
-CRITICAL REQUIREMENTS - MUST FOLLOW EXACTLY:
-1. Return ONLY valid JSON, no explanations, no markdown, no additional text
-2. JSON format STRICTLY:
+YÊU CẦU QUAN TRỌNG - PHẢI TUÂN THỦ CHÍNH XÁC:
+1. Chỉ trả về JSON hợp lệ, KHÔNG thêm giải thích, KHÔNG markdown, KHÔNG text nào khác
+2. Định dạng JSON BẮT BUỘC:
 {
   "questions": [
     {
-      "subject": "Subject Name (exactly as provided)",
-      "text": "Clear question text with proper grammar",
-      "options": ["A. Option A", "B. Option B", "C. Option C", "D. Option D"],
+      "subject": "Tên môn học (viết bằng tiếng Việt)",
+      "text": "Nội dung câu hỏi rõ ràng, đúng chính tả",
+      "options": ["A. Lựa chọn A", "B. Lựa chọn B", "C. Lựa chọn C", "D. Lựa chọn D"],
       "answer": "A"
     }
   ]
 }
 
-EDUCATIONAL STANDARDS:
-- Questions must align with Vietnamese Ministry of Education curriculum for grade ${grade}
-- Difficulty level: mix of easy (30%), medium (50%), and challenging (20%)
-- Questions must be factually accurate and unambiguous
-- Each question should test ONE specific concept or skill
-- Avoid culturally insensitive content
-- Use age-appropriate language for grade ${grade} students
+CHUẨN KIẾN THỨC:
+- Câu hỏi phải bám sát chương trình của Bộ Giáo dục cho lớp ${grade}
+- Phân bố độ khó: dễ (30%), trung bình (50%), khó (20%)
+- Câu hỏi phải chính xác về mặt kiến thức, không mơ hồ
+- Mỗi câu hỏi chỉ kiểm tra MỘT khái niệm/kỹ năng cụ thể
+- Nội dung phù hợp với lứa tuổi học sinh lớp ${grade}
+- Sử dụng tiếng Việt chuẩn, đúng chính tả và ngữ pháp
 
 ${specificRequirements}
 
-QUESTION FORMAT RULES:
-- Each question MUST have exactly 4 options (A, B, C, D)
-- Options must be plausible but only one correct
-- Avoid "all of the above" or "none of the above" unless absolutely necessary
-- Distractors (wrong answers) should be common misconceptions
-- Answer must be exactly "A", "B", "C", or "D"
+QUY TẮC ĐỊNH DẠNG CÂU HỎI:
+- Mỗi câu hỏi PHẢI có đúng 4 lựa chọn (A, B, C, D)
+- Các lựa chọn phải hợp lý nhưng chỉ có 1 đáp án đúng
+- Tránh dùng "tất cả đáp án trên" hoặc "không có đáp án nào" trừ khi thật cần thiết
+- Các lựa chọn sai nên là những lỗi sai phổ biến của học sinh
+- Đáp án phải là chính xác "A", "B", "C", hoặc "D"
 
-DISTRIBUTION REQUIREMENTS:
-- Correct answers must be evenly distributed: ${Math.floor(num/4)} questions per letter (A, B, C, D)
-- If ${num} is not divisible by 4, distribute remainder randomly but ensure balance
+PHÂN BỐ ĐÁP ÁN:
+- Đáp án đúng phải được phân bố đều: ${Math.floor(num/4)} câu cho mỗi chữ cái (A, B, C, D)
+- Nếu ${num} không chia hết cho 4, phân bố số dư ngẫu nhiên nhưng đảm bảo cân bằng
 
-VERIFICATION STEPS (check before returning):
-- Verify each question has exactly 4 options
-- Verify each option starts with "A.", "B.", "C.", or "D."
-- Verify answer matches one of the options
-- Verify no duplicate or similar questions
-- Verify all content is appropriate for grade ${grade}
-- Double-check factual accuracy
+KIỂM TRA CHẤT LƯỢNG (kiểm tra trước khi trả về):
+- Đếm số lượng đáp án A, B, C, D có cân bằng không
+- Đảm bảo mỗi câu có đúng 4 lựa chọn
+- Đảm bảo mỗi lựa chọn bắt đầu bằng "A.", "B.", "C.", hoặc "D."
+- Đảm bảo đáp án khớp với một trong các lựa chọn
+- Không có câu hỏi trùng lặp hoặc quá giống nhau
+- Tất cả nội dung phù hợp với học sinh lớp ${grade}
+- Kiểm tra kỹ tính chính xác của kiến thức
 
-QUALITY CHECK:
-- Questions should be engaging and clear
-- Avoid trick questions
-- Ensure consistent difficulty across all questions
+VÍ DỤ CÂU HỎI TỐT:
+{
+  "subject": "Toán",
+  "text": "Kết quả của phép tính 25 + 17 là:",
+  "options": ["A. 32", "B. 42", "C. 52", "D. 62"],
+  "answer": "B"
+}
 
-Remember: Return ONLY the JSON object, no other text.`;
+Lưu ý quan trọng: Chỉ trả về JSON, KHÔNG thêm bất kỳ text nào khác.`;
 }
 
 function getSubjectSpecificRequirements(subject, grade) {
     const requirements = {
-        'Toán': `- Focus on grade ${grade} math concepts (arithmetic, geometry, algebra, measurement)
-- Include both computational and word problems
-- Ensure numbers and operations are appropriate for grade ${grade}
-- Use real-life examples where applicable`,
+        'Toán': `YÊU CẦU RIÊNG CHO MÔN TOÁN:
+- Tập trung vào kiến thức toán lớp ${grade} (số học, hình học, đại số, đo lường)
+- Bao gồm cả bài toán tính toán và bài toán có lời văn
+- Số liệu và phép tính phù hợp với trình độ lớp ${grade}
+- Ưu tiên các ví dụ thực tế, gần gũi với học sinh
+- Có thể bao gồm: tính nhanh, tìm x, hình học cơ bản, phân số, số thập phân (tùy theo lớp)`,
         
-        'Lý': `- Focus on fundamental physics concepts for grade ${grade}
-- Include everyday examples and observations
-- Ensure no advanced formulas beyond grade ${grade} level`,
+        'Lý': `YÊU CẦU RIÊNG CHO MÔN VẬT LÝ:
+- Tập trung vào các khái niệm vật lý cơ bản cho lớp ${grade}
+- Sử dụng các ví dụ từ đời sống hàng ngày
+- Tránh các công thức phức tạp vượt quá trình độ lớp ${grade}
+- Chú trọng hiện tượng vật lý và giải thích`,
         
-        'Hóa': `- Focus on basic chemistry concepts for grade ${grade}
-- Include safety awareness where relevant
-- Emphasize real-world applications`,
+        'Hóa': `YÊU CẦU RIÊNG CHO MÔN HÓA HỌC:
+- Tập trung vào khái niệm hóa học cơ bản cho lớp ${grade}
+- Chú ý an toàn trong phòng thí nghiệm (nếu có)
+- Liên hệ với các ứng dụng thực tế
+- Công thức hóa học đơn giản, phù hợp`,
         
-        'Văn': `- Use age-appropriate literary excerpts
-- Focus on reading comprehension, vocabulary, and basic literary analysis
-- Questions should test understanding, not memorization`,
+        'Sinh': `YÊU CẦU RIÊNG CHO MÔN SINH HỌC:
+- Tập trung vào kiến thức sinh học lớp ${grade}
+- Liên quan đến cơ thể người, thực vật, động vật (tùy theo lớp)
+- Sử dụng hình ảnh quen thuộc với học sinh
+- Chú trọng các quá trình sinh học cơ bản`,
         
-        'Anh': `- Use grade ${grade} appropriate vocabulary and grammar
-- Include reading comprehension, grammar, and vocabulary questions
-- Ensure all English text is grammatically correct`,
+        'Văn': `YÊU CẦU RIÊNG CHO MÔN NGỮ VĂN:
+- Sử dụng ngữ liệu phù hợp với lứa tuổi (có thể trích dẫn tác phẩm trong chương trình)
+- Tập trung vào đọc hiểu, từ vựng, phân tích văn học cơ bản
+- Câu hỏi kiểm tra khả năng hiểu, không phải học thuộc lòng
+- Đảm bảo tính giáo dục và phù hợp thuần phong mỹ tục`,
         
-        'Sử': `- Focus on historical facts appropriate for grade ${grade}
-- Include both Vietnamese and world history as per curriculum
-- Ensure dates and events are accurate`,
+        'Anh': `YÊU CẦU RIÊNG CHO MÔN TIẾNG ANH:
+- Sử dụng từ vựng và ngữ pháp phù hợp lớp ${grade}
+- Bao gồm câu hỏi đọc hiểu, ngữ pháp, từ vựng
+- Tất cả nội dung tiếng Anh phải đúng ngữ pháp
+- Câu hỏi đọc hiểu sử dụng đoạn văn ngắn, đơn giản`,
         
-        'Địa': `- Focus on geographical concepts for grade ${grade}
-- Include map reading skills where applicable
-- Cover both physical and human geography`
+        'Sử': `YÊU CẦU RIÊNG CHO MÔN LỊCH SỬ:
+- Tập trung vào sự kiện lịch sử phù hợp lớp ${grade}
+- Bao gồm cả lịch sử Việt Nam và thế giới theo chương trình
+- Đảm bảo tính chính xác của mốc thời gian và sự kiện
+- Câu hỏi nên giúp học sinh hiểu ý nghĩa lịch sử`,
+        
+        'Địa': `YÊU CẦU RIÊNG CHO MÔN ĐỊA LÝ:
+- Tập trung vào khái niệm địa lý lớp ${grade}
+- Có thể bao gồm kỹ năng đọc bản đồ
+- Bao gồm cả địa lý tự nhiên và địa lý kinh tế - xã hội
+- Sử dụng ví dụ cụ thể về các vùng miền ở Việt Nam`
     };
     
-    return requirements[subject] || '- Follow standard curriculum guidelines for this subject';
+    return requirements[subject] || `YÊU CẦU RIÊNG CHO MÔN ${subject}:
+- Tuân thủ chương trình chuẩn của Bộ Giáo dục cho lớp ${grade}
+- Nội dung phù hợp với lứa tuổi
+- Đảm bảo tính chính xác và giáo dục`;
 }
 function createExplanationPrompt(question, correctAnswer, userAnswer = null) {
     const isCorrect = userAnswer === correctAnswer;
