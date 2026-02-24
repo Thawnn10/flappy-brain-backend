@@ -197,7 +197,7 @@ YÊU CẦU QUAN TRỌNG - PHẢI TUÂN THỦ CHÍNH XÁC:
 
 CHUẨN KIẾN THỨC:
 - Câu hỏi phải bám sát chương trình của Bộ Giáo dục cho lớp ${grade}
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Câu hỏi phải chính xác về mặt kiến thức, không mơ hồ
 - Mỗi câu hỏi chỉ kiểm tra MỘT khái niệm/kỹ năng cụ thể
 - Nội dung phù hợp với lứa tuổi học sinh lớp ${grade}
@@ -243,34 +243,39 @@ function getSubjectSpecificRequirements(subject, grade) {
 - Các bài tập thật đa dạng không quá dễ cũng không khó đến mức bất khả thi
 - Số liệu và phép tính phù hợp với trình độ lớp ${grade}
 - Ưu tiên các ví dụ thực tế, gần gũi với học sinh
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Có thể bao gồm: tính nhanh, tìm x, hình học cơ bản, phân số, số thập phân (tùy theo lớp)`,
         
         'Lý': `YÊU CẦU RIÊNG CHO MÔN VẬT LÝ:
 - Tập trung vào các khái niệm vật lý cơ bản cho lớp ${grade}
 - Sử dụng các ví dụ từ đời sống hàng ngày
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Tránh các công thức phức tạp vượt quá trình độ lớp ${grade}
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
 - Chú trọng hiện tượng vật lý và giải thích`,
         
         'Hóa': `YÊU CẦU RIÊNG CHO MÔN HÓA HỌC:
 - Tập trung vào khái niệm hóa học cơ bản cho lớp ${grade}
 - Chú ý an toàn trong phòng thí nghiệm (nếu có)
 - Liên hệ với các ứng dụng thực tế
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Công thức hóa học đơn giản, phù hợp`,
         
         'Sinh': `YÊU CẦU RIÊNG CHO MÔN SINH HỌC:
 - Tập trung vào kiến thức sinh học lớp ${grade}
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Liên quan đến cơ thể người, thực vật, động vật (tùy theo lớp)
 - Sử dụng hình ảnh quen thuộc với học sinh
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
 - Chú trọng các quá trình sinh học cơ bản`,
         
         'Văn': `YÊU CẦU RIÊNG CHO MÔN NGỮ VĂN:
 - Sử dụng ngữ liệu phù hợp với lứa tuổi (có thể trích dẫn tác phẩm trong chương trình)
 - Tập trung vào đọc hiểu, từ vựng, phân tích văn học cơ bản
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Câu hỏi kiểm tra khả năng hiểu, không phải học thuộc lòng
 - Đảm bảo tính giáo dục và phù hợp thuần phong mỹ tục`,
         
@@ -278,27 +283,32 @@ function getSubjectSpecificRequirements(subject, grade) {
 - Sử dụng từ vựng và ngữ pháp phù hợp lớp ${grade}
 - Bao gồm câu hỏi đọc hiểu, ngữ pháp, từ vựng
 - Tất cả nội dung tiếng Anh phải đúng ngữ pháp
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Sử dụng toàn bộ là tiếng Anh
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Câu hỏi đọc hiểu sử dụng đoạn văn ngắn, đơn giản`,
         
         'Sử': `YÊU CẦU RIÊNG CHO MÔN LỊCH SỬ:
 - Tập trung vào sự kiện lịch sử phù hợp lớp ${grade}
 - Bao gồm cả lịch sử Việt Nam và thế giới theo chương trình
 - Đảm bảo tính chính xác của mốc thời gian và sự kiện
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Câu hỏi nên giúp học sinh hiểu ý nghĩa lịch sử`,
         
         'Địa': `YÊU CẦU RIÊNG CHO MÔN ĐỊA LÝ:
 - Tập trung vào khái niệm địa lý lớp ${grade}
 - Có thể bao gồm kỹ năng đọc bản đồ
-- Phân bố độ khó: dễ (20%), trung bình (50%), khó (30%)
+- Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Bao gồm cả địa lý tự nhiên và địa lý kinh tế - xã hội
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
 - Sử dụng ví dụ cụ thể về các vùng miền ở Việt Nam`
     };
     
     return requirements[subject] || `YÊU CẦU RIÊNG CHO MÔN ${subject}:
 - Tuân thủ tuyệt đối chương trình chuẩn của Bộ Giáo dục cho lớp ${grade}
 - Nội dung phù hợp với lứa tuổi
+- Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
 - Đảm bảo tính tuyệt đối chính xác và giáo dục không thể xảy ra việc tạo câu hỏi sai`;
 }
 function createExplanationPrompt(question, correctAnswer, userAnswer = null) {
