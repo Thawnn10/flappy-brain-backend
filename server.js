@@ -242,7 +242,8 @@ function getSubjectSpecificRequirements(subject, grade) {
 - Tập trung vào kiến thức toán lớp ${grade} (số học, hình học, đại số, đo lường)
 - Các bài tập thật đa dạng không quá dễ cũng không khó đến mức bất khả thi đảm bảo tuyệt đối giống các dạng bài trong sách giáo khoa lớp ${grade}
 - Số liệu và phép tính phù hợp tuyệt đối với trình độ lớp ${grade}
-- Ưu tiên các ví dụ thực tế, gần gũi với học sinh tuyệt đối không sử dụng những câu tính toán cộng trừ các số đối với các lớp 7 đến 12
+- Ưu tiên các ví dụ thực tế, gần gũi với học sinh tuyệt đối không sử dụng những câu tính toán cộng trừ nhân chia các số đối với các lớp 7 đến 12 
+- Tuyệt đối tập trung vào các dạng bài có trong sách giáo khoa
 - Các câu hỏi đa dạng các dạng bài tránh lặp lại nhiều lần một dạng
 A. CẤU TRÚC MẠCH KIẾN THỨC (theo chương trình mới):
 
