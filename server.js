@@ -196,6 +196,7 @@ YÊU CẦU QUAN TRỌNG - PHẢI TUÂN THỦ CHÍNH XÁC:
 }
 
 CHUẨN KIẾN THỨC:
+- Các câu hỏi không lặp lại với các câu đã tạo trước
 - Câu hỏi phải bám sát chương trình của Bộ Giáo dục cho lớp ${grade}
 - Phân bố độ khó : các câu hỏi ở mức bình thường so với trương trình của Bộ giáo dục đan xen vài câu hỏi khó 
 - Câu hỏi phải chính xác về mặt kiến thức, không mơ hồ
