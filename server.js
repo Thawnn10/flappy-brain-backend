@@ -252,162 +252,219 @@ A. CẤU TRÚC MẠCH KIẾN THỨC (theo chương trình mới):
 3. THỐNG KÊ VÀ XÁC SUẤT (20% câu hỏi) 
 4. HOẠT ĐỘNG THỰC HÀNH VÀ TRẢI NGHIỆM (10% câu hỏi) - các bài toán gắn với thực tiễn 
 
-B. YÊU CẦU CẦN ĐẠT THEO TỪNG MẠCH KIẾN THỨC:
+A. CÁC DẠNG BÀI CỤ THỂ THEO TỪNG KHỐI LỚP:
 
-1. SỐ VÀ ĐẠI SỐ:
-LỚP 1-5:
-- Đọc, viết, so sánh, tính toán các số tự nhiên trong phạm vi phù hợp lớp học
-- Nhận biết phân số, số thập phân (lớp 4-5)
-- Tính giá trị biểu thức số có đến 2-3 phép tính
-- Tìm thành phần chưa biết (x)
-
-LỚP 6-7:
-- Số nguyên, phân số, số thập phân, hỗn số
-- Tỉ lệ thức, dãy tỉ số bằng nhau
-- Biểu thức đại số, đơn thức, đa thức
-- Phương trình bậc nhất một ẩn
-
-LỚP 8-9:
-- Căn bậc hai, căn bậc ba
-- Hàm số bậc nhất, bậc hai và đồ thị
-- Phương trình bậc hai, hệ phương trình bậc nhất hai ẩn
-- Bất phương trình bậc nhất một ẩn
-
-LỚP 10-12:
-- Hàm số lũy thừa, mũ, logarit
-- Đạo hàm, nguyên hàm, tích phân
-- Số phức
-- Phương pháp tọa độ trong mặt phẳng và không gian
-
-2. HÌNH HỌC VÀ ĐO LƯỜNG:
-
-LỚP 1-5:
-- Nhận dạng hình phẳng, hình khối
-- Tính chu vi, diện tích các hình đơn giản
-- Đo độ dài, khối lượng, dung tích, thời gian
-- Xác định vị trí, định hướng không gian
-
-LỚP 6-7:
-- Điểm, đường thẳng, tia, góc
-- Quan hệ song song, vuông góc
-- Tam giác, tứ giác (tính chất, diện tích)
-- Hình hộp chữ nhật, hình lăng trụ đứng
-
-LỚP 8-9:
-- Định lý Pythagore
-- Đường tròn (góc với đường tròn, tiếp tuyến)
-- Hình đồng dạng
-- Hình nón, hình trụ, hình cầu
-
-LỚP 10-12:
-- Vectơ trong mặt phẳng và không gian
-- Phương pháp tọa độ trong mặt phẳng, không gian
-- Quan hệ vuông góc trong không gian
-- Khối đa diện, thể tích khối đa diện
-
-3. THỐNG KÊ VÀ XÁC SUẤT: 
-
-LỚP 1-5:
-- Thu thập, phân loại dữ liệu đơn giản
-- Đọc biểu đồ tranh, biểu đồ cột
-- Nhận biết khả năng xảy ra (chắc chắn, có thể, không thể)
-
-LỚP 6-7:
-- Thu thập, phân tích dữ liệu
-- Biểu đồ cột kép, biểu đồ đoạn thẳng
-- Xác suất của biến cố đơn giản
-
-LỚP 8-9:
-- Bảng tần số, biểu đồ tần số
-- Xác suất của biến cố trong các thí nghiệm đơn giản
-- Giá trị trung bình, mốt, trung vị
-
-LỚP 10-12:
-- Quy tắc đếm, hoán vị, chỉnh hợp, tổ hợp
-- Xác suất có điều kiện, xác suất toàn phần
-- Biến ngẫu nhiên rời rạc, kỳ vọng, phương sai
-
-4. HOẠT ĐỘNG THỰC HÀNH VÀ TRẢI NGHIỆM: 
-
-LỚP 1-5:
-- Bài toán mua bán, tính tiền
-- Bài toán đo đạc thực tế
-- Bài toán thời gian (giờ, ngày, tháng)
-- Ứng dụng toán trong cuộc sống hàng ngày
-
-LỚP 6-9:
-- Bài toán thực tế về tỉ lệ, phần trăm (giảm giá, lãi suất)
-- Bài toán đo đạc trong thực tế (chiều cao cây, tòa nhà)
-- Bài toán về chuyển động, công việc
-- Dự án nhỏ: thống kê, dự đoán
-
-LỚP 10-12:
-- Bài toán tối ưu (sản xuất, kinh doanh)
-- Mô hình hóa toán học các tình huống thực tế
-- Ứng dụng đạo hàm trong tối ưu hóa
-- Bài toán lãi suất ngân hàng, đầu tư
-
-C. VÍ DỤ MINH HỌA CỤ THỂ CHO LỚP ${grade}:
-
+------------------------
 LỚP 1:
-• Số 15 gồm mấy chục và mấy đơn vị?
-• Hình nào là hình vuông?
-• Đồng hồ chỉ mấy giờ?
+- Đếm số, đọc số, viết số
+- So sánh số (>, <, =)
+- Cộng trừ trong phạm vi 10, 20
+- Nhận biết hình vuông, hình tròn, hình tam giác
+- Xem đồng hồ (giờ đúng)
+- Bài toán "thêm", "bớt" đơn giản
 
+------------------------
 LỚP 2:
-• 23 + 15 = ?
-• Điền dấu >, <, =: 45 ... 54
-• Mẹ mua 12 quả cam, biếu bà 5 quả. Hỏi còn lại mấy quả?
+- Cộng trừ có nhớ trong phạm vi 100
+- Bảng nhân 2,3,4,5
+- Tìm số hạng, số bị trừ chưa biết
+- Tính độ dài đường gấp khúc
+- Nhận biết ngày, tháng
+- Bài toán nhiều hơn, ít hơn
 
+------------------------
 LỚP 3:
-• Tính: 125 + 234 = ?
-• Hình chữ nhật có chiều dài 8cm, chiều rộng 5cm. Tính chu vi?
-• Biểu đồ cột cho biết số học sinh thích các môn học
+- Bảng nhân 6,7,8,9
+- Nhân, chia số có 2,3 chữ số
+- Tính giá trị biểu thức (có dấu ngoặc)
+- Tính chu vi hình chữ nhật, hình vuông
+- Xem đồng hồ (chính xác đến phút)
+- Bài toán rút về đơn vị
+- Bài toán liên quan đến gấp/giảm số lần
 
+------------------------
 LỚP 4:
-• 3/4 của 24 là bao nhiêu?
-• 2,5 + 3,7 = ?
-• Một cửa hàng bán 150kg gạo, đã bán được 2/5 số gạo. Hỏi còn lại bao kg?
+- Phép nhân, chia số có nhiều chữ số
+- Dấu hiệu chia hết cho 2,3,5,9
+- Phân số: so sánh, cộng trừ phân số
+- Tính diện tích hình bình hành, hình thoi
+- Tìm hai số khi biết tổng và hiệu
+- Bài toán tìm số trung bình cộng
+- Bài toán về tỉ lệ bản đồ
 
+------------------------
 LỚP 5:
-• 25% của 200 là bao nhiêu?
-• Tính diện tích hình thang có đáy lớn 8cm, đáy bé 5cm, cao 4cm
-• Khả năng nào có thể xảy ra khi tung đồng xu?
+- Hỗn số, số thập phân
+- Cộng trừ nhân chia số thập phân
+- Tỉ số phần trăm (tính %, tìm % của số)
+- Tính diện tích hình thang, hình tròn
+- Tính thể tích hình hộp chữ nhật
+- Bài toán chuyển động đều
+- Bài toán về vòi nước chảy
 
+------------------------
 LỚP 6:
-• (-15) + 20 = ?
-• Tìm x biết: 2x - 5 = 11
-• Một lớp có 24 học sinh nam, 16 học sinh nữ. Tính tỉ số phần trăm học sinh nữ?
+- Tập hợp, phần tử
+- Lũy thừa, thứ tự thực hiện phép tính
+- Số nguyên, cộng trừ nhân chia số nguyên
+- Phân số bằng nhau, rút gọn phân số
+- Các phép tính về phân số
+- Hỗn số, số thập phân, phần trăm
+- Ba điểm thẳng hàng, tia, đường thẳng
+- Đoạn thẳng, độ dài đoạn thẳng
+- Góc, số đo góc
 
+------------------------
 LỚP 7:
-• Thu gọn đơn thức: 3x²y . (-2xy³)
-• Cho tam giác ABC có góc A = 50°, góc B = 70°. Tính góc C?
-• Biểu đồ đoạn thẳng biểu diễn nhiệt độ các ngày trong tuần
+- Số hữu tỉ, cộng trừ nhân chia số hữu tỉ
+- Lũy thừa của số hữu tỉ
+- Tỉ lệ thức, tính chất dãy tỉ số bằng nhau
+- Số thập phân vô hạn, làm tròn số
+- Căn bậc hai
+- Đại lượng tỉ lệ thuận, tỉ lệ nghịch
+- Biểu thức đại số, đơn thức, đa thức
+- Hai góc đối đỉnh, hai đường thẳng song song
+- Tổng ba góc của tam giác
+- Các trường hợp bằng nhau của tam giác
 
+------------------------
 LỚP 8:
-• Giải phương trình: x² - 5x + 6 = 0
-• Tính cạnh huyền của tam giác vuông có hai cạnh góc vuông 6cm và 8cm
-• Một xe máy đi từ A lúc 7h với vận tốc 40km/h, đến B lúc 9h. Tính quãng đường AB?
+- Nhân chia đa thức
+- Hằng đẳng thức đáng nhớ
+- Phân tích đa thức thành nhân tử
+- Phân thức đại số, tính chất cơ bản
+- Phương trình bậc nhất một ẩn
+- Bất phương trình bậc nhất một ẩn
+- Định lý Pythagore
+- Tứ giác, hình thang, hình bình hành
+- Hình chữ nhật, hình thoi, hình vuông
+- Diện tích đa giác
 
+------------------------
 LỚP 9:
-• Giải hệ phương trình: {x + y = 5; 2x - y = 1}
-• Cho đường tròn (O) bán kính 5cm, dây AB = 6cm. Tính khoảng cách từ O đến AB
-• Một hộp có 5 bi đỏ, 3 bi xanh. Lấy ngẫu nhiên 1 bi. Tính xác suất lấy được bi đỏ?
+- Căn thức bậc hai, bậc ba
+- Hàm số bậc nhất y = ax + b
+- Hệ hai phương trình bậc nhất hai ẩn
+- Hàm số y = ax² (a ≠ 0)
+- Phương trình bậc hai một ẩn
+- Hệ thức Vi-ét và ứng dụng
+- Góc ở tâm, góc nội tiếp
+- Tứ giác nội tiếp
+- Độ dài đường tròn, cung tròn
+- Diện tích hình tròn, hình quạt
+- Hình trụ, hình nón, hình cầu
 
+------------------------
 LỚP 10:
-• Tìm tập xác định của hàm số y = √(x-3)
-• Trong mặt phẳng Oxy, cho A(1,2), B(4,6). Tính độ dài AB
-• Tung một con xúc xắc 2 lần. Tính xác suất tổng số chấm bằng 7
+- Mệnh đề, tập hợp
+- Bất phương trình, hệ bất phương trình bậc nhất
+- Hệ thức lượng trong tam giác
+- Tích vô hướng của hai vectơ
+- Phương trình đường thẳng, đường tròn
+- Ba đường conic
+- Hàm số bậc hai, đồ thị
+- Dấu của tam thức bậc hai
+- Thống kê (tần số, tần suất)
+- Công thức lượng giác
 
+------------------------
 LỚP 11:
-• Tính đạo hàm của f(x) = x³ - 3x² + 2x
-• Có bao nhiêu cách xếp 5 bạn vào 5 ghế?
-• Cho hình chóp S.ABCD có đáy là hình vuông. Chứng minh SA vuông góc với BD
+- Hàm số lượng giác, phương trình lượng giác
+- Tổ hợp, xác suất
+- Nhị thức Newton
+- Cấp số cộng, cấp số nhân
+- Giới hạn dãy số, hàm số
+- Hàm số liên tục
+- Đạo hàm, ý nghĩa của đạo hàm
+- Phép dời hình, phép đồng dạng
+- Đường thẳng vuông góc với mặt phẳng
+- Góc trong không gian
 
+------------------------
 LỚP 12:
-• Tính nguyên hàm ∫(2x + 3)dx
-• Tìm m để hàm số y = x³ - 3mx² + 3x đồng biến trên R
-• Một người gửi 100 triệu với lãi suất 7%/năm. Tính số tiền sau 3 năm
+- Tính đơn điệu của hàm số
+- Cực trị của hàm số
+- Giá trị lớn nhất, nhỏ nhất
+- Đường tiệm cận
+- Khảo sát hàm số
+- Lũy thừa, logarit
+- Nguyên hàm, tích phân
+- Ứng dụng tích phân tính diện tích, thể tích
+- Số phức
+- Hình học không gian Oxyz
+- Khối đa diện, thể tích khối đa diện
+- Mặt nón, mặt trụ, mặt cầu
+
+B. VÍ DỤ CỤ THỂ TỪNG DẠNG BÀI (LỚP 5 VÀ LỚP 9):
+
+----- LỚP 5 - DẠNG SỐ THẬP PHÂN -----
+Câu hỏi: Số thập phân 35,708 đọc là:
+A. Ba mươi lăm phẩy bảy trăm linh tám
+B. Ba mươi lăm phẩy bảy không tám
+C. Ba năm phẩy bảy trăm linh tám
+D. Ba mươi năm phẩy bảy trăm linh tám
+
+----- LỚP 5 - DẠNG TỈ SỐ PHẦN TRĂM -----
+Câu hỏi: Một cửa hàng bán một chiếc xe đạp giá 1.500.000 đồng, được lãi 20% so với giá vốn. Hỏi giá vốn của chiếc xe đạp là bao nhiêu?
+A. 1.200.000 đồng
+B. 1.250.000 đồng
+C. 1.300.000 đồng
+D. 1.800.000 đồng
+
+----- LỚP 5 - DẠNG CHUYỂN ĐỘNG -----
+Câu hỏi: Một người đi xe máy từ A lúc 7 giờ 30 phút và đến B lúc 9 giờ. Vận tốc trung bình là 40 km/giờ. Quãng đường AB dài:
+A. 60 km
+B. 70 km
+C. 80 km
+D. 100 km
+
+----- LỚP 9 - DẠNG CĂN THỨC -----
+Câu hỏi: Rút gọn biểu thức √(9a²) với a < 0 được kết quả là:
+A. 3a
+B. -3a
+C. 9a
+D. -9a
+
+----- LỚP 9 - DẠNG HỆ PHƯƠNG TRÌNH -----
+Câu hỏi: Nghiệm của hệ phương trình {x + y = 5; 2x - y = 1} là:
+A. (2;3)
+B. (3;2)
+C. (1;4)
+D. (4;1)
+
+----- LỚP 9 - DẠNG TỨ GIÁC NỘI TIẾP -----
+Câu hỏi: Cho tứ giác ABCD nội tiếp đường tròn. Biết góc A = 80°, góc B = 70°. Tính góc C?
+A. 80°
+B. 90°
+C. 100°
+D. 110°
+
+----- LỚP 9 - DẠNG HÌNH TRỤ -----
+Câu hỏi: Một hình trụ có bán kính đáy 3cm, chiều cao 5cm. Thể tích của hình trụ là:
+A. 45π cm³
+B. 30π cm³
+C. 15π cm³
+D. 60π cm³
+
+C. CÁC DẠNG BÀI CẦN CÓ TRONG BỘ CÂU HỎI:
+
+1. Dạng tính toán đơn thuần (20%) - nhưng là tính toán theo đặc thù lớp
+2. Dạng trắc nghiệm lý thuyết (15%) - chọn khái niệm đúng, điền vào chỗ trống
+3. Dạng bài tập có lời văn (30%) - tình huống thực tế
+4. Dạng hình học (20%) - tính toán, nhận biết, quan hệ
+5. Dạng bài tập đồ thị, bảng biểu (10%) - đọc hiểu số liệu
+6. Dạng suy luận logic (5%) - tìm quy luật, điền số còn thiếu
+
+D. YÊU CẦU KIỂM TRA ĐA DẠNG:
+
+Trước khi tạo, hãy tự kiểm tra: 
+- Câu hỏi có đúng dạng bài trong SGK lớp ${grade} không?
+- Có phải chỉ toàn "tính: 5+7" không? - Nếu có thì SAI
+- Có ít nhất 3-4 dạng bài khác nhau trong bộ câu hỏi không?
+- Có đủ các mạch kiến thức (số học, hình học, đo lường, thống kê) không?
+- Có câu hỏi lý thuyết không?
+
+Lưu ý: Tránh lặp lại cùng một dạng bài quá nhiều lần
 
 D. ĐIỂM MỚI CỦA CHƯƠNG TRÌNH GDPT 2018 CẦN LƯU Ý:
 
